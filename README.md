@@ -1,2 +1,9 @@
 # Datetime
-Python package project.
+The package/ library I choose to demonstrate is datetime. Datetime is a library that essentially allows easy manipulation of date, times, and even timezones(with the addition of the pytz module). The manipulation of date and time allows developers to create programs that utilize that function, such as timesheets, sign-ins, and much more. To install datetime, you can use the virtual environment. The command "pip install datetime" will install the library, and the command "import datetime" will import the library into your file. Some useful functions are as follows:
+
+datetime.date.today(): This function determines and outputs the current date (the function used in my code). 
+datetime.timedelta(): calculates the difference between certain intervals of time.
+datetime.time(): outputs hours, minutes, seconds, microseconds and timezones
+
+The program I wrote using the library calculates the age of a guest with input of their DoB in comparison to the current date to determine whether they are of drinking age or not (21 years). The function that defines that entire code is "drinking_age" (line 6). The function needs to be defined with an input for the variables "year, month, and day" which represents the inputed DoB. The code first calculates the difference between the current date and the DoB in day (lines 9-12). The value of days is then converted to a string, then an integer in order to be calculated into the age later on (line 13). It is important to note that the basic output from datetime is not a string or integer, meaning it wont compute without being converted. The integer value of days is then divided with the amount of days in a year, essentially calculating the age (line 15). With the age, the code goes through a series of if, else statements that determine and print if the user is 21, and can drink (line 17-25). There is also a feature that calculated the difference in years till a guest (who is younger than 21) eventually turns 21 (line 15).
+
